@@ -11,7 +11,6 @@ import UIKit
 class ProjectCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
-    var project: Project!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,7 +24,6 @@ class ProjectCell: UITableViewCell {
     }
     
     func configureCell(project: Project) {
-        self.project = project
         self.nameLabel.text = project.name
     }
 

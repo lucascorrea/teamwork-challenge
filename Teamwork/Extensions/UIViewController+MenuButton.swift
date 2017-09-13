@@ -10,7 +10,7 @@ import UIKit
 
 extension UIViewController {
     
-    func setupBarButton(viewController: UIViewController) {
+    func setupMenuBarButton(viewController: UIViewController) {
         let viewController = viewController
         
         //Button left

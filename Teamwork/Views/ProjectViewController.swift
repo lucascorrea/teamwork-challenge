@@ -15,7 +15,7 @@ class ProjectViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setupBarButton(viewController: self)
+        self.setupMenuBarButton(viewController: self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,8 +50,4 @@ extension ProjectViewController: UITableViewDelegate {
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 90
-//    }
 }

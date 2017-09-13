@@ -13,7 +13,7 @@ class TaskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.setupBarButton(viewController: self)
+        self.setupMenuBarButton(viewController: self)
     }
 
     override func didReceiveMemoryWarning() {

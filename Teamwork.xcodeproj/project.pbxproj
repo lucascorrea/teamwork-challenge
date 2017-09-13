@@ -199,8 +199,8 @@
 		A0AF1C351F699D070077A336 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				A0AF1C1B1F698DD40077A336 /* MenuViewController.swift */,
 				A0AF1C361F699D1F0077A336 /* MenuCell.swift */,
+				A0AF1C1B1F698DD40077A336 /* MenuViewController.swift */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -208,8 +208,8 @@
 		A0AF1C381F69A00A0077A336 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				A0AF1C311F6994AD0077A336 /* ProjectViewController.swift */,
 				A0AF1C3C1F69A8DB0077A336 /* ProjectCell.swift */,
+				A0AF1C311F6994AD0077A336 /* ProjectViewController.swift */,
 			);
 			name = Project;
 			sourceTree = "<group>";
