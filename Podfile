@@ -6,6 +6,8 @@ target 'Teamwork' do
   use_frameworks!
 
   # Pods for Teamwork
+  pod 'SwipeCellKit'
+  pod 'Alamofire'
 
   target 'TeamworkTests' do
     inherit! :search_paths

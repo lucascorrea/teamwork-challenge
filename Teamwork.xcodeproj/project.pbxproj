@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59279B992980760E6151BC0E /* Pods_Teamwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B884316709D6683457144798 /* Pods_Teamwork.framework */; };
 		A0AF1BED1F69839A0077A336 /* TeamworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1BEC1F69839A0077A336 /* TeamworkTests.swift */; };
 		A0AF1C261F698DD40077A336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AF1C171F698DD40077A336 /* Assets.xcassets */; };
 		A0AF1C271F698DD40077A336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C191F698DD40077A336 /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 		A0AF1C3D1F69A8DB0077A336 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C3C1F69A8DB0077A336 /* ProjectCell.swift */; };
 		A0AF1C3F1F69A93A0077A336 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C3E1F69A93A0077A336 /* ProjectViewModel.swift */; };
 		A0AF1C411F69A99C0077A336 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C401F69A99C0077A336 /* Project.swift */; };
+		FD28AB1943F5E4BD0EE22A5D /* Pods_TeamworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FAAD19FB8F5A7422B76366 /* Pods_TeamworkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05C69BBB5545E92CCE5AD0BF /* Pods-TeamworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamworkTests/Pods-TeamworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		10FAAD19FB8F5A7422B76366 /* Pods_TeamworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E4702E4A1663632327E573 /* Pods-Teamwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teamwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork.debug.xcconfig"; sourceTree = "<group>"; };
 		A0AF1BD41F69839A0077A336 /* Teamwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AF1BE31F69839A0077A336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0AF1BE81F69839A0077A336 /* TeamworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +61,9 @@
 		A0AF1C3C1F69A8DB0077A336 /* ProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
 		A0AF1C3E1F69A93A0077A336 /* ProjectViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 		A0AF1C401F69A99C0077A336 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		B884316709D6683457144798 /* Pods_Teamwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teamwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13BB97B7C0FF79C60B5C9BC /* Pods-TeamworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamworkTests/Pods-TeamworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		E2A8BB7AB248902B4ACBFD96 /* Pods-Teamwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teamwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59279B992980760E6151BC0E /* Pods_Teamwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,18 +79,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD28AB1943F5E4BD0EE22A5D /* Pods_TeamworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B3693323E72C5F193007057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B884316709D6683457144798 /* Pods_Teamwork.framework */,
+				10FAAD19FB8F5A7422B76366 /* Pods_TeamworkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0AF1BCB1F69839A0077A336 = {
 			isa = PBXGroup;
 			children = (
 				A0AF1BD61F69839A0077A336 /* Teamwork */,
 				A0AF1BEB1F69839A0077A336 /* TeamworkTests */,
 				A0AF1BD51F69839A0077A336 /* Products */,
+				BB7AE9BCCABEA22DF6C9B9FF /* Pods */,
+				3B3693323E72C5F193007057 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,6 +243,17 @@
 			name = Task;
 			sourceTree = "<group>";
 		};
+		BB7AE9BCCABEA22DF6C9B9FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96E4702E4A1663632327E573 /* Pods-Teamwork.debug.xcconfig */,
+				E2A8BB7AB248902B4ACBFD96 /* Pods-Teamwork.release.xcconfig */,
+				05C69BBB5545E92CCE5AD0BF /* Pods-TeamworkTests.debug.xcconfig */,
+				D13BB97B7C0FF79C60B5C9BC /* Pods-TeamworkTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0AF1BF11F69839A0077A336 /* Build configuration list for PBXNativeTarget "Teamwork" */;
 			buildPhases = (
+				ED014B0A6702BB2E0E40824D /* [CP] Check Pods Manifest.lock */,
 				A0AF1BD01F69839A0077A336 /* Sources */,
 				A0AF1BD11F69839A0077A336 /* Frameworks */,
 				A0AF1BD21F69839A0077A336 /* Resources */,
+				385F49255E24A2D6016CB095 /* [CP] Embed Pods Frameworks */,
+				4B2188454268B2C7132C8489 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,9 +281,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0AF1BF41F69839A0077A336 /* Build configuration list for PBXNativeTarget "TeamworkTests" */;
 			buildPhases = (
+				6A7DB672C0B4DFCC91E30007 /* [CP] Check Pods Manifest.lock */,
 				A0AF1BE41F69839A0077A336 /* Sources */,
 				A0AF1BE51F69839A0077A336 /* Frameworks */,
 				A0AF1BE61F69839A0077A336 /* Resources */,
+				710B2E26EFEF1BE89A1421F8 /* [CP] Embed Pods Frameworks */,
+				F82BB5E6DC0DFDD8A416B393 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,6 +360,110 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		385F49255E24A2D6016CB095 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B2188454268B2C7132C8489 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A7DB672C0B4DFCC91E30007 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeamworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		710B2E26EFEF1BE89A1421F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamworkTests/Pods-TeamworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED014B0A6702BB2E0E40824D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Teamwork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F82BB5E6DC0DFDD8A416B393 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamworkTests/Pods-TeamworkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0AF1BD01F69839A0077A336 /* Sources */ = {
@@ -475,6 +617,7 @@
 		};
 		A0AF1BF21F69839A0077A336 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96E4702E4A1663632327E573 /* Pods-Teamwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
@@ -488,6 +631,7 @@
 		};
 		A0AF1BF31F69839A0077A336 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2A8BB7AB248902B4ACBFD96 /* Pods-Teamwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
@@ -501,6 +645,7 @@
 		};
 		A0AF1BF51F69839A0077A336 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05C69BBB5545E92CCE5AD0BF /* Pods-TeamworkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +661,7 @@
 		};
 		A0AF1BF61F69839A0077A336 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D13BB97B7C0FF79C60B5C9BC /* Pods-TeamworkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
