@@ -14,17 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {        
         
         UIApplication.shared.statusBarStyle = .lightContent
-//        UINavigationBar.appearance().isTranslucent = false
-//        UINavigationBar.appearance().shadowImage = UIImage()
-//        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-        
-//        UITableViewCell.appearance().backgroundColor = UIColor.clear
         
         return true
     }

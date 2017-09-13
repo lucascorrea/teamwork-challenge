@@ -88,10 +88,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kte-3n-rUK">
-                                                    <rect key="frame" x="42" y="11" width="259" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dfsdfads" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kte-3n-rUK">
+                                                    <rect key="frame" x="42" y="0.0" width="259" height="36"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="MavenProBold" family="Maven Pro" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="MavenProBold" family="Maven Pro" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -103,6 +103,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="KBG-1m-xfd" id="hRg-Vc-6ny"/>
+                                    <outlet property="delegate" destination="KBG-1m-xfd" id="PZZ-EL-rUf"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65o-qf-Bk5">
                                 <rect key="frame" x="42" y="644" width="113" height="21"/>
@@ -151,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UkY-3U-dEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783" y="-519"/>
+            <point key="canvasLocation" x="781.60000000000002" y="-520.38980509745136"/>
         </scene>
         <!--Projects-->
         <scene sceneID="CnG-Jz-Mx0">
@@ -194,7 +198,7 @@
         <!--Tasks-->
         <scene sceneID="drD-xD-0cb">
             <objects>
-                <viewController id="iBG-5a-tYr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TaskViewController" id="iBG-5a-tYr" customClass="TaskViewController" customModule="Teamwork" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mXr-uC-r79"/>
                         <viewControllerLayoutGuide type="bottom" id="M21-a1-Qhq"/>

@@ -17,6 +17,9 @@
 		A0AF1C2E1F6990A60077A336 /* SSASideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C2D1F6990A60077A336 /* SSASideMenu.swift */; };
 		A0AF1C301F6994410077A336 /* UIViewController+MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C2F1F6994410077A336 /* UIViewController+MenuButton.swift */; };
 		A0AF1C321F6994AD0077A336 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C311F6994AD0077A336 /* ProjectViewController.swift */; };
+		A0AF1C341F699CE00077A336 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C331F699CE00077A336 /* MenuViewModel.swift */; };
+		A0AF1C371F699D1F0077A336 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C361F699D1F0077A336 /* MenuCell.swift */; };
+		A0AF1C3B1F69A0310077A336 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C3A1F69A0310077A336 /* TaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		A0AF1C2D1F6990A60077A336 /* SSASideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSASideMenu.swift; sourceTree = "<group>"; };
 		A0AF1C2F1F6994410077A336 /* UIViewController+MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MenuButton.swift"; sourceTree = "<group>"; };
 		A0AF1C311F6994AD0077A336 /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		A0AF1C331F699CE00077A336 /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		A0AF1C361F699D1F0077A336 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		A0AF1C3A1F69A0310077A336 /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +134,9 @@
 		A0AF1C1A1F698DD40077A336 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A0AF1C1B1F698DD40077A336 /* MenuViewController.swift */,
-				A0AF1C311F6994AD0077A336 /* ProjectViewController.swift */,
+				A0AF1C351F699D070077A336 /* Menu */,
+				A0AF1C381F69A00A0077A336 /* Project */,
+				A0AF1C391F69A0130077A336 /* Task */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,6 +161,7 @@
 		A0AF1C221F698DD40077A336 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A0AF1C331F699CE00077A336 /* MenuViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -178,6 +186,31 @@
 				A0AF1C2D1F6990A60077A336 /* SSASideMenu.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A0AF1C351F699D070077A336 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF1C1B1F698DD40077A336 /* MenuViewController.swift */,
+				A0AF1C361F699D1F0077A336 /* MenuCell.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		A0AF1C381F69A00A0077A336 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF1C311F6994AD0077A336 /* ProjectViewController.swift */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		A0AF1C391F69A0130077A336 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF1C3A1F69A0310077A336 /* TaskViewController.swift */,
+			);
+			name = Task;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,9 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0AF1C371F699D1F0077A336 /* MenuCell.swift in Sources */,
 				A0AF1C321F6994AD0077A336 /* ProjectViewController.swift in Sources */,
 				A0AF1C2E1F6990A60077A336 /* SSASideMenu.swift in Sources */,
 				A0AF1C281F698DD40077A336 /* MenuViewController.swift in Sources */,
+				A0AF1C341F699CE00077A336 /* MenuViewModel.swift in Sources */,
+				A0AF1C3B1F69A0310077A336 /* TaskViewController.swift in Sources */,
 				A0AF1C271F698DD40077A336 /* AppDelegate.swift in Sources */,
 				A0AF1C301F6994410077A336 /* UIViewController+MenuButton.swift in Sources */,
 			);
