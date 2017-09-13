@@ -12,19 +12,19 @@ import UIKit
 class MenuViewModel {
     
     var menuItems: [String]
-    var indexPathSelect: IndexPath
-    var colorSelected = UIColor(red: 54 / 255.0, green: 68 / 255.0, blue: 94 / 255.0, alpha: 1.0)
+    fileprivate var indexPathSelect: IndexPath
+    fileprivate var colorSelected = UIColor(red: 54 / 255.0, green: 68 / 255.0, blue: 94 / 255.0, alpha: 1.0)
     
     init() {
         indexPathSelect = IndexPath(row: 0, section: 0)
         
-        menuItems = [String]()
-        menuItems.append("Projects")
-        menuItems.append("Tasks")
+        self.menuItems = [String]()
+        self.menuItems.append("Projects")
+        self.menuItems.append("Tasks")
     }
     
     func configureCell(cell: inout MenuCell, indexPath: IndexPath) {
-        let menu = menuItems[indexPath.row]
+        let menu = self.menuItems[indexPath.row]
         cell.nameLabel.text = menu
         
         if indexPath.row == indexPathSelect.row {

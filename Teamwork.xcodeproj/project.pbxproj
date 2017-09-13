@@ -20,6 +20,9 @@
 		A0AF1C341F699CE00077A336 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C331F699CE00077A336 /* MenuViewModel.swift */; };
 		A0AF1C371F699D1F0077A336 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C361F699D1F0077A336 /* MenuCell.swift */; };
 		A0AF1C3B1F69A0310077A336 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C3A1F69A0310077A336 /* TaskViewController.swift */; };
+		A0AF1C3D1F69A8DB0077A336 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C3C1F69A8DB0077A336 /* ProjectCell.swift */; };
+		A0AF1C3F1F69A93A0077A336 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C3E1F69A93A0077A336 /* ProjectViewModel.swift */; };
+		A0AF1C411F69A99C0077A336 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C401F69A99C0077A336 /* Project.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		A0AF1C331F699CE00077A336 /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		A0AF1C361F699D1F0077A336 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		A0AF1C3A1F69A0310077A336 /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		A0AF1C3C1F69A8DB0077A336 /* ProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		A0AF1C3E1F69A93A0077A336 /* ProjectViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
+		A0AF1C401F69A99C0077A336 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				A0AF1C331F699CE00077A336 /* MenuViewModel.swift */,
+				A0AF1C3E1F69A93A0077A336 /* ProjectViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -169,6 +176,7 @@
 		A0AF1C231F698DD40077A336 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A0AF1C401F69A99C0077A336 /* Project.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				A0AF1C311F6994AD0077A336 /* ProjectViewController.swift */,
+				A0AF1C3C1F69A8DB0077A336 /* ProjectCell.swift */,
 			);
 			name = Project;
 			sourceTree = "<group>";
@@ -323,7 +332,10 @@
 				A0AF1C321F6994AD0077A336 /* ProjectViewController.swift in Sources */,
 				A0AF1C2E1F6990A60077A336 /* SSASideMenu.swift in Sources */,
 				A0AF1C281F698DD40077A336 /* MenuViewController.swift in Sources */,
+				A0AF1C3F1F69A93A0077A336 /* ProjectViewModel.swift in Sources */,
+				A0AF1C3D1F69A8DB0077A336 /* ProjectCell.swift in Sources */,
 				A0AF1C341F699CE00077A336 /* MenuViewModel.swift in Sources */,
+				A0AF1C411F69A99C0077A336 /* Project.swift in Sources */,
 				A0AF1C3B1F69A0310077A336 /* TaskViewController.swift in Sources */,
 				A0AF1C271F698DD40077A336 /* AppDelegate.swift in Sources */,
 				A0AF1C301F6994410077A336 /* UIViewController+MenuButton.swift in Sources */,

@@ -13,7 +13,7 @@ class MenuViewController: UIViewController {
     @IBOutlet weak private var nameLabel: UILabel!
     @IBOutlet weak private var emailLabel: UILabel!
 
-    let menuViewModel = MenuViewModel()
+    fileprivate let menuViewModel = MenuViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ extension MenuViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 extension MenuViewController: UITableViewDelegate {
-    // scroll view delegate methods
+    // table view delegate methods
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         

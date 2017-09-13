@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
         <array key="MavenPro-Bold.ttf">
             <string>MavenProBold</string>
         </array>
@@ -168,20 +171,65 @@
                     <view key="view" contentMode="scaleToFill" id="Qqd-PM-hoL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="57" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7r3-BP-ilZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" id="FYM-pr-9zF">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectCell" rowHeight="57" id="uhk-nb-Tno" customClass="ProjectCell" customModule="Teamwork" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uhk-nb-Tno" id="Sud-3j-Oh0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Project 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRJ-HY-CcF">
+                                                    <rect key="frame" x="21" y="8" width="334" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="ZRJ-HY-CcF" id="WFs-1e-68N"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Kez-da-G24" id="iIQ-SP-mDM"/>
+                                    <outlet property="delegate" destination="Kez-da-G24" id="zWt-8D-oAC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7r3-BP-ilZ" firstAttribute="leading" secondItem="Qqd-PM-hoL" secondAttribute="leading" id="2t4-Vg-aok"/>
+                            <constraint firstItem="7r3-BP-ilZ" firstAttribute="top" secondItem="Qqd-PM-hoL" secondAttribute="top" id="Ndl-6T-Y9y"/>
+                            <constraint firstAttribute="trailing" secondItem="7r3-BP-ilZ" secondAttribute="trailing" id="S6D-ua-ve5"/>
+                            <constraint firstItem="as5-ER-ZKJ" firstAttribute="top" secondItem="7r3-BP-ilZ" secondAttribute="bottom" id="X2K-LS-uZM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Projects" id="Tye-II-0kI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IHn-5T-Pee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2433" y="-853"/>
+            <point key="canvasLocation" x="2432.8000000000002" y="-853.22338830584715"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3MZ-T6-PJm">
             <objects>
                 <navigationController storyboardIdentifier="ProjectNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Uzy-PD-TWG" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XHV-aa-jEG">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XHV-aa-jEG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.23137254901960785" green="0.5725490196078431" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
@@ -209,10 +257,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="IAo-CP-Dcq"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="kjP-Vf-H9V" id="YRs-Ky-XI9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjU-Hk-cTE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="kjP-Vf-H9V">
+                    <connections>
+                        <outlet property="delegate" destination="iBG-5a-tYr" id="24F-Jk-hYF"/>
+                        <outlet property="searchContentsController" destination="iBG-5a-tYr" id="eOR-vM-eIN"/>
+                        <outlet property="searchResultsDataSource" destination="iBG-5a-tYr" id="xdX-vZ-kze"/>
+                        <outlet property="searchResultsDelegate" destination="iBG-5a-tYr" id="zsN-dH-vQn"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2433" y="-109"/>
+            <point key="canvasLocation" x="2432.8000000000002" y="-109.29535232383809"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MSG-yt-mRm">
