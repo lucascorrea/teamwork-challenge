@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MenuViewController.swift
 //  Teamwork
 //
 //  Created by Lucas Correa on 13/09/2017.
@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MenuViewController: UIViewController {
+    
+    @IBOutlet weak private var nameLabel: UILabel!
+    @IBOutlet weak private var emailLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +22,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
