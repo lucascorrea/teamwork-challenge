@@ -154,8 +154,8 @@ enum ActionDescriptor {
         guard displayMode != .imageOnly else { return nil }
         
         switch self {
-        case .task: return "Add Task"
-        case .remove: return "Remove Project"
+        case .task: return addTask
+        case .remove: return removeProject
         }
     }
     

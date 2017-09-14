@@ -18,7 +18,7 @@ class Network {
     static func request(target: API, success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
         
         print(target.url)
-        
+      
         Alamofire.request(target.url, method: target.method, parameters: target.parameters, headers: target.headers).validate(statusCode: 200..<300).responseJSON { response in
             if response.result.isFailure {
                 
@@ -31,6 +31,25 @@ class Network {
                 }
             }
         }
+    }
+    
+    static func request2(target: API, success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
+        
+        Alamofire.request(target.url, method: target.method, parameters: target.parameters, encoding: JSONEncoding.default, headers: target.headers).validate(statusCode: 200..<300).responseJSON { response in
+            
+            if response.result.isFailure {
+                
+                let value = Network.convertToDictionary(data: response.data!)
+                
+                failure(response.response, value as AnyObject?, response.result.error)
+            } else {
+                if let json = response.result.value {
+                    success(json as AnyObject?)
+                }
+            }
+        }
+
+
     }
     
     static func convertToDictionary(data: Data) -> [String: Any]? {

@@ -22,6 +22,11 @@
 		A01476191F6A92F40021C340 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01476181F6A92F40021C340 /* AddTaskViewController.swift */; };
 		A014761B1F6AA0DE0021C340 /* Tasklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014761A1F6AA0DE0021C340 /* Tasklist.swift */; };
 		A014761D1F6AA4840021C340 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014761C1F6AA4840021C340 /* Constant.swift */; };
+		A014761F1F6AA5490021C340 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014761E1F6AA5490021C340 /* TaskViewModel.swift */; };
+		A01476211F6AC46A0021C340 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01476201F6AC46A0021C340 /* Task.swift */; };
+		A01476231F6AC83B0021C340 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01476221F6AC83B0021C340 /* Tag.swift */; };
+		A04948C01F6ACDD3005EF4BE /* Alamofire+Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948BF1F6ACDD3005EF4BE /* Alamofire+Body.swift */; };
+		A04948C21F6AE8ED005EF4BE /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948C11F6AE8ED005EF4BE /* Global.swift */; };
 		A0AF1BED1F69839A0077A336 /* TeamworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1BEC1F69839A0077A336 /* TeamworkTests.swift */; };
 		A0AF1C261F698DD40077A336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AF1C171F698DD40077A336 /* Assets.xcassets */; };
 		A0AF1C271F698DD40077A336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C191F698DD40077A336 /* AppDelegate.swift */; };
@@ -69,6 +74,11 @@
 		A01476181F6A92F40021C340 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		A014761A1F6AA0DE0021C340 /* Tasklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasklist.swift; sourceTree = "<group>"; };
 		A014761C1F6AA4840021C340 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A014761E1F6AA5490021C340 /* TaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		A01476201F6AC46A0021C340 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		A01476221F6AC83B0021C340 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		A04948BF1F6ACDD3005EF4BE /* Alamofire+Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+Body.swift"; sourceTree = "<group>"; };
+		A04948C11F6AE8ED005EF4BE /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		A0AF1BD41F69839A0077A336 /* Teamwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AF1BE31F69839A0077A336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0AF1BE81F69839A0077A336 /* TeamworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +220,7 @@
 			children = (
 				A0AF1C2F1F6994410077A336 /* UIViewController+MenuButton.swift */,
 				A00859BD1F6A7A13005D3330 /* UIView+Border.swift */,
+				A04948BF1F6ACDD3005EF4BE /* Alamofire+Body.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -219,6 +230,7 @@
 			children = (
 				A0AF1C331F699CE00077A336 /* MenuViewModel.swift */,
 				A0AF1C3E1F69A93A0077A336 /* ProjectViewModel.swift */,
+				A014761E1F6AA5490021C340 /* TaskViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -236,6 +248,8 @@
 				A00859C41F6A8028005D3330 /* MicrosoftConnector.swift */,
 				A00859C51F6A8028005D3330 /* OneDriveBusiness.swift */,
 				A00859C61F6A8028005D3330 /* RootClass.swift */,
+				A01476201F6AC46A0021C340 /* Task.swift */,
+				A01476221F6AC83B0021C340 /* Tag.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,6 +268,7 @@
 			children = (
 				A0AF1C2D1F6990A60077A336 /* SSASideMenu.swift */,
 				A014761C1F6AA4840021C340 /* Constant.swift */,
+				A04948C11F6AE8ED005EF4BE /* Global.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -522,6 +537,7 @@
 				A00859CB1F6A8028005D3330 /* Integration.swift in Sources */,
 				A0AF1C321F6994AD0077A336 /* ProjectViewController.swift in Sources */,
 				A0AF1C2E1F6990A60077A336 /* SSASideMenu.swift in Sources */,
+				A04948C21F6AE8ED005EF4BE /* Global.swift in Sources */,
 				A014761B1F6AA0DE0021C340 /* Tasklist.swift in Sources */,
 				A0AF1C281F698DD40077A336 /* MenuViewController.swift in Sources */,
 				A0AF1C3F1F69A93A0077A336 /* ProjectViewModel.swift in Sources */,
@@ -530,14 +546,18 @@
 				A0AF1C341F699CE00077A336 /* MenuViewModel.swift in Sources */,
 				A01476161F6A87440021C340 /* API.swift in Sources */,
 				A0AF1C411F69A99C0077A336 /* Project.swift in Sources */,
+				A04948C01F6ACDD3005EF4BE /* Alamofire+Body.swift in Sources */,
 				A00859CC1F6A8028005D3330 /* MicrosoftConnector.swift in Sources */,
 				A01476171F6A87440021C340 /* Network.swift in Sources */,
 				A014761D1F6AA4840021C340 /* Constant.swift in Sources */,
+				A014761F1F6AA5490021C340 /* TaskViewModel.swift in Sources */,
 				A01476191F6A92F40021C340 /* AddTaskViewController.swift in Sources */,
 				A0AF1C3B1F69A0310077A336 /* TaskViewController.swift in Sources */,
 				A0AF1C271F698DD40077A336 /* AppDelegate.swift in Sources */,
 				A00859CA1F6A8028005D3330 /* Default.swift in Sources */,
+				A01476231F6AC83B0021C340 /* Tag.swift in Sources */,
 				A0AF1C301F6994410077A336 /* UIViewController+MenuButton.swift in Sources */,
+				A01476211F6AC46A0021C340 /* Task.swift in Sources */,
 				A00859C81F6A8028005D3330 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

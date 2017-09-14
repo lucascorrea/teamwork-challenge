@@ -17,6 +17,7 @@ class AddTaskViewController: UIViewController {
     @IBOutlet weak var taskListLabel: UILabel!
     
     fileprivate let projectViewModel: ProjectViewModel = ProjectViewModel()
+    fileprivate let taskViewModel: TaskViewModel = TaskViewModel()
     
     var project: Project?
     var taskList: Tasklist?
@@ -26,8 +27,9 @@ class AddTaskViewController: UIViewController {
 
         self.projectLabel.text = project!.name
         
+        //BarButton save
         let saveButton = UIButton(type: .custom)
-        saveButton.setTitle("Save", for: .normal)
+        saveButton.setTitle(save, for: .normal)
         saveButton.frame = CGRect(x: 0, y: 0, width: 50, height: 30)
         saveButton.addTarget(self, action: #selector(addTask(_:)), for: .touchUpInside)
         let saveBarButton = UIBarButtonItem(customView: saveButton)
@@ -48,7 +50,7 @@ class AddTaskViewController: UIViewController {
                 self.taskList = self.projectViewModel.taskListItems[0]
                 self.taskListLabel.text = self.taskList!.name
             } else {
-                let alert = UIAlertController(title: "Alert", message: "No exist taskList", preferredStyle: .alert)
+                let alert = UIAlertController(title: weHaveAProblem, message: noExistTaskList, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
@@ -66,8 +68,66 @@ class AddTaskViewController: UIViewController {
     
     //
     // MARK: - Functions
+    
+    func validateForm() -> Bool {
+        var check = true
+        
+        if self.titleText.text?.lengthOfBytes(using: .utf8) == 0 {
+            check = false
+        }
+        
+        if self.taskList == nil {
+            check = false
+        }
+        
+        if self.project == nil {
+            check = false
+        }
+        
+        if !check {
+            let alert = UIAlertController(title: moreInformation, message: validateFormTask, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+        return check
+    }
+    
     func addTask(_ sender: Any) {
-        print("passou")
+        
+        if !validateForm() {
+            return;
+        }
+        
+        //Loading
+        let loadingView = RSLoadingView()
+        loadingView.dimBackgroundColor = loadingColor
+        loadingView.show(on: self.view)
+        
+        // Request all taskLists
+        taskViewModel.addTask(taskListId: taskList!.id!, content: self.titleText.text!, description: self.descriptionTextView.text!, success: { (success) in
+            RSLoadingView.hide(from: self.view)
+
+            if self.taskViewModel.isStatusOK {
+                
+                let alertController = UIAlertController(title: alert, message: addedTask, preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alertController, animated: true, completion: {})
+                
+                delay(1) {
+                    self.navigationController?.popViewController(animated: true)
+                }
+                
+            } else {
+                let alertController = UIAlertController(title: weHaveAProblem, message: errorInsertTask, preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alertController, animated: true, completion: nil)
+            }
+            
+        }) { (response, object, error) in
+            RSLoadingView.hide(from: self.view)
+        }
+
     }
     
 }
