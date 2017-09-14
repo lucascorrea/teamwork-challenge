@@ -19,6 +19,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RSLoadingView-RSLoadingView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RSLoadingView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwipeCellKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -26,6 +36,37 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>49CEF5294957058A772F14E641724F9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>57EBE44BB5ED3E79FCEAA4AFF033D105</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFFD95D3F177FA23A41C8652FDB46933</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E44D23E2183F69597F894280FC3232AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E4AF1FF834DC31CAC1ED086744747D65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

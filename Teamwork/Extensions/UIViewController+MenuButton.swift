@@ -10,6 +10,8 @@ import UIKit
 
 extension UIViewController {
     
+    //
+    // MARK: - Functions
     func setupMenuBarButton(viewController: UIViewController) {
         let viewController = viewController
         

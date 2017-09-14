@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SwipeCellKit
 
-class ProjectCell: UITableViewCell {
+class ProjectCell: SwipeTableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -23,6 +24,8 @@ class ProjectCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //
+    // MARK: - Functions
     func configureCell(project: Project) {
         self.nameLabel.text = project.name
     }

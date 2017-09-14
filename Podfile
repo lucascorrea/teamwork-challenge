@@ -8,6 +8,7 @@ target 'Teamwork' do
   # Pods for Teamwork
   pod 'SwipeCellKit'
   pod 'Alamofire'
+  pod 'RSLoadingView'
 
   target 'TeamworkTests' do
     inherit! :search_paths

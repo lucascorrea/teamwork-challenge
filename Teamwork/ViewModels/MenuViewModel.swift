@@ -23,6 +23,8 @@ class MenuViewModel {
         self.menuItems.append("Tasks")
     }
     
+    //
+    // MARK: - Functions
     func configureCell(cell: inout MenuCell, indexPath: IndexPath) {
         let menu = self.menuItems[indexPath.row]
         cell.nameLabel.text = menu
