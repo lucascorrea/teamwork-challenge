@@ -17,6 +17,7 @@ class ProjectViewController: UIViewController {
     fileprivate let buttonDisplayMode: ButtonDisplayMode = .titleAndImage
     fileprivate let buttonStyle: ButtonStyle = .backgroundColor
     fileprivate let projectViewModel: ProjectViewModel = ProjectViewModel()
+    var refreshView: BreakOutToRefreshView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,16 +31,31 @@ class ProjectViewController: UIViewController {
         
         // Request all projects
         projectViewModel.list(success: { (success) in
-             RSLoadingView.hide(from: self.view)
+            RSLoadingView.hide(from: self.view)
             self.projectTableView.reloadData()
         }) { (response, object, error) in
-             RSLoadingView.hide(from: self.view)
+            RSLoadingView.hide(from: self.view)
         }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        refreshView = BreakOutToRefreshView(scrollView: self.projectTableView, viewParent: self.view)
+        refreshView.refreshDelegate = self
+        self.projectTableView.addSubview(refreshView)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        refreshView.removeFromSuperview()
+        refreshView = nil
     }
     
 }
@@ -100,9 +116,9 @@ extension ProjectViewController: SwipeTableViewCellDelegate {
             
             // Action Remove
             let delete = SwipeAction(style: .destructive, title: nil) { action, indexPath in
-                
+                //I haven't implemented the request method to remove a project to have data in the environment.
                 self.projectViewModel.projectItems.remove(at: indexPath.row)
-                tableView.deleteRows(at: [indexPath], with: .right)
+                tableView.deleteRows(at: [indexPath], with: .fade)
             }
             delete.hidesWhenSelected = true
             configure(action: delete, with: .remove)
@@ -142,6 +158,48 @@ extension ProjectViewController: SwipeTableViewCellDelegate {
             action.transitionDelegate = ScaleTransition.default
         }
     }
+}
+
+//
+// MARK: - UIScrollViewDelegate
+extension ProjectViewController: UIScrollViewDelegate {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (refreshView != nil) {
+            refreshView.scrollViewDidScroll(scrollView)
+        }
+        
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        if (refreshView != nil) {
+            refreshView.scrollViewWillEndDragging(scrollView, withVelocity: velocity, targetContentOffset: targetContentOffset)
+        }
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        if (refreshView != nil) {
+            refreshView.scrollViewWillBeginDragging(scrollView)
+        }
+    }
+}
+
+//
+// MARK: - BreakOutToRefreshDelegate
+extension ProjectViewController: BreakOutToRefreshDelegate {
+    
+    func refreshViewDidRefresh(_ refreshView: BreakOutToRefreshView) {
+        
+        // Request all projects
+        projectViewModel.list(success: { (success) in
+            refreshView.endRefreshing()
+            
+            self.projectTableView.reloadData()
+        }) { (response, object, error) in
+            refreshView.endRefreshing()
+        }
+    }
+    
 }
 
 
