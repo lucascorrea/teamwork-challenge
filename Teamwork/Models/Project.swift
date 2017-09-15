@@ -77,6 +77,11 @@ struct Project {
         isProjectAdmin = dictionary["isProjectAdmin"] as? Bool
         lastChangedOn = dictionary["last-changed-on"] as? String
         logo = dictionary["logo"] as? String
+        
+        if logo.lengthOfBytes(using: .utf8) == 0 {
+            logo = "http://via.placeholder.com/350x150"
+        }
+        
         name = dictionary["name"] as? String
         notifyEveryone = dictionary["notifyeveryone"] as? Bool
         overviewStartPage = dictionary["overview-start-page"] as? String

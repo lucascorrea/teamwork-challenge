@@ -28,6 +28,7 @@
 		A04948C01F6ACDD3005EF4BE /* Alamofire+Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948BF1F6ACDD3005EF4BE /* Alamofire+Body.swift */; };
 		A04948C21F6AE8ED005EF4BE /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948C11F6AE8ED005EF4BE /* Global.swift */; };
 		A04948C41F6AEB6A005EF4BE /* BreakOutToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948C31F6AEB6A005EF4BE /* BreakOutToRefreshView.swift */; };
+		A04948C61F6AFE5B005EF4BE /* ShowProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948C51F6AFE5A005EF4BE /* ShowProjectViewController.swift */; };
 		A0AF1BED1F69839A0077A336 /* TeamworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1BEC1F69839A0077A336 /* TeamworkTests.swift */; };
 		A0AF1C261F698DD40077A336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AF1C171F698DD40077A336 /* Assets.xcassets */; };
 		A0AF1C271F698DD40077A336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C191F698DD40077A336 /* AppDelegate.swift */; };
@@ -81,6 +82,7 @@
 		A04948BF1F6ACDD3005EF4BE /* Alamofire+Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+Body.swift"; sourceTree = "<group>"; };
 		A04948C11F6AE8ED005EF4BE /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		A04948C31F6AEB6A005EF4BE /* BreakOutToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakOutToRefreshView.swift; sourceTree = "<group>"; };
+		A04948C51F6AFE5A005EF4BE /* ShowProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProjectViewController.swift; sourceTree = "<group>"; };
 		A0AF1BD41F69839A0077A336 /* Teamwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AF1BE31F69839A0077A336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0AF1BE81F69839A0077A336 /* TeamworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -290,6 +292,7 @@
 			children = (
 				A0AF1C3C1F69A8DB0077A336 /* ProjectCell.swift */,
 				A0AF1C311F6994AD0077A336 /* ProjectViewController.swift */,
+				A04948C51F6AFE5A005EF4BE /* ShowProjectViewController.swift */,
 			);
 			name = Project;
 			sourceTree = "<group>";
@@ -430,12 +433,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/RSLoadingView/RSLoadingView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSLoadingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
@@ -549,6 +554,7 @@
 				A0AF1C341F699CE00077A336 /* MenuViewModel.swift in Sources */,
 				A01476161F6A87440021C340 /* API.swift in Sources */,
 				A0AF1C411F69A99C0077A336 /* Project.swift in Sources */,
+				A04948C61F6AFE5B005EF4BE /* ShowProjectViewController.swift in Sources */,
 				A04948C01F6ACDD3005EF4BE /* Alamofire+Body.swift in Sources */,
 				A00859CC1F6A8028005D3330 /* MicrosoftConnector.swift in Sources */,
 				A01476171F6A87440021C340 /* Network.swift in Sources */,

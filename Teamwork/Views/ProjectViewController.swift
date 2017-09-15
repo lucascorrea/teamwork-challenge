@@ -67,6 +67,10 @@ extension ProjectViewController {
             let viewController = segue.destination as? AddTaskViewController
             viewController?.project = sender as? Project
         }
+        if segue.identifier == "showProjectSegue" {
+            let viewController = segue.destination as? ShowProjectViewController
+            viewController?.project = sender as? Project
+        }
     }
 }
 
@@ -96,6 +100,8 @@ extension ProjectViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
+        let project = self.projectViewModel.projectItems[indexPath.row]
+        self.performSegue(withIdentifier: "showProjectSegue", sender: project)
     }
 }
 

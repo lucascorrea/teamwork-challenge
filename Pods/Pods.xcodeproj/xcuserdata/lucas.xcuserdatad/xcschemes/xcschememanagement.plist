@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AlamofireImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Teamwork.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,12 +42,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0D0F56B3C628820668A30E46EA0D6ECA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>391D9444B90A5F5CBD9E42E522CE7358</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>49CEF5294957058A772F14E641724F9F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>57EBE44BB5ED3E79FCEAA4AFF033D105</key>
+		<key>4EB010A183BFDAA8132EC3FC049CA433</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,17 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CFFD95D3F177FA23A41C8652FDB46933</key>
+		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E44D23E2183F69597F894280FC3232AA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E4AF1FF834DC31CAC1ED086744747D65</key>
+		<key>FD3CC2B9D4B7B4F62C1872E387086D7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

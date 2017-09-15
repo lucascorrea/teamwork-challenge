@@ -1,18 +1,22 @@
 PODS:
   - Alamofire (4.5.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
   - RSLoadingView (1.1.0)
   - SwipeCellKit (1.9.0)
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireImage
   - RSLoadingView
   - SwipeCellKit
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   RSLoadingView: b9cdf4970da28e5d4b306784688e640696dd80d3
   SwipeCellKit: 893661973276ae3512a84ac0a47055923b10731e
 
-PODFILE CHECKSUM: ab655fdefc0bf8cb633c7b4079bd927d026890de
+PODFILE CHECKSUM: 75bc982de94c881a7ef37bcadd169b26d130719d
 
 COCOAPODS: 1.3.0.beta.2

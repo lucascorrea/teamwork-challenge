@@ -8,6 +8,10 @@
 
 import Foundation
 
+class Global {
+    internal static var dateFormatter: DateFormatter = DateFormatter()
+}
+
 func delay(_ delay: Double, closure: @escaping () -> Void) {
     DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
         closure()

@@ -29,7 +29,7 @@ class TaskViewModel {
     func addTask(taskListId: String, content: String, description: String, success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
         
         let request = API.AddTask(taskListId: taskListId, content: content, description: description)
-        Network.request2(target: request, success: { (response) in
+        Network.requestBody(target: request, success: { (response) in
             
             guard let value = response as? [String: AnyObject] else {
                 print("Response not dictionary")

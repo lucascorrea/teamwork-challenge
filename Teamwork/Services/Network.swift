@@ -33,7 +33,7 @@ class Network {
         }
     }
     
-    static func request2(target: API, success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
+    static func requestBody(target: API, success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
         
         Alamofire.request(target.url, method: target.method, parameters: target.parameters, encoding: JSONEncoding.default, headers: target.headers).validate(statusCode: 200..<300).responseJSON { response in
             
