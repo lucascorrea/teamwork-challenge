@@ -20,12 +20,6 @@ class TaskViewModel {
     
     //
     // MARK: - Functions
-    func list(success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
-        
-    }
-    
-    //
-    // MARK: - Functions
     func addTask(taskListId: String, content: String, description: String, success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
         
         let request = API.AddTask(taskListId: taskListId, content: content, description: description)

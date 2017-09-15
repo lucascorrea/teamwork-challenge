@@ -14,12 +14,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Nimble.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Teamwork.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-TeamworkTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Quick.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,12 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>391D9444B90A5F5CBD9E42E522CE7358</key>
+		<key>3023114EE4DE2885C0A913975149A85E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>49CEF5294957058A772F14E641724F9F</key>
+		<key>391D9444B90A5F5CBD9E42E522CE7358</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -68,6 +78,16 @@
 			<true/>
 		</dict>
 		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BCCD5D8D0452E88166865EE9AFCB57BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD7C8BF89FE8053D0A2A2D88BB49CF07</key>
 		<dict>
 			<key>primary</key>
 			<true/>

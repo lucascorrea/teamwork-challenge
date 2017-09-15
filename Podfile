@@ -13,7 +13,8 @@ target 'Teamwork' do
    
   target 'TeamworkTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
   end
 
 end

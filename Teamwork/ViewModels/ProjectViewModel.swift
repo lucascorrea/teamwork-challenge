@@ -12,11 +12,11 @@ import UIKit
 class ProjectViewModel {
     
     var projectItems: [Project]
-    var taskListItems: [Tasklist]
+    var taskListItems: [TaskList]
     
     init() {
         projectItems = [Project]()
-        taskListItems = [Tasklist]()
+        taskListItems = [TaskList]()
     }
     
     //
@@ -36,8 +36,8 @@ class ProjectViewModel {
             let array = ((value as AnyObject)["projects"] as? NSArray)!
             
             for (_, object) in array.enumerated() {
-                let product = Project(fromDictionary:(object as? [String : AnyObject])!)
-                self.projectItems.append(product)
+                let project = Project(fromDictionary:(object as? [String : AnyObject])!)
+                self.projectItems.append(project)
             }
             
             success(self)
@@ -63,8 +63,8 @@ class ProjectViewModel {
             let array = ((value as AnyObject)["tasklists"] as? NSArray)!
             
             for (_, object) in array.enumerated() {
-                let product = Tasklist(fromDictionary:(object as? [String : AnyObject])!)
-                self.taskListItems.append(product)
+                let taskList = TaskList(fromDictionary:(object as? [String : AnyObject])!)
+                self.taskListItems.append(taskList)
             }
             
             success(self)

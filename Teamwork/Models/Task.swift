@@ -129,6 +129,7 @@ struct Task {
                 tags.append(value)
             }
         }
+        
         taskListIsTemplate = dictionary["tasklist-isTemplate"] as? Bool
         taskListLockdownId = dictionary["tasklist-lockdownId"] as? String
         taskListPrivate = dictionary["tasklist-private"] as? Bool

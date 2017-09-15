@@ -10,6 +10,7 @@ import Foundation
 
 class Global {
     internal static var dateFormatter: DateFormatter = DateFormatter()
+    internal static var authenticate: String = "Basic eWF0QHRyaXBsZXNwaW4uY29tOnlhdHlhdHlhdDI3"
 }
 
 func delay(_ delay: Double, closure: @escaping () -> Void) {

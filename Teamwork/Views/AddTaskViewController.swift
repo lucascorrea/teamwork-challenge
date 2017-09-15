@@ -20,7 +20,7 @@ class AddTaskViewController: UIViewController {
     fileprivate let taskViewModel: TaskViewModel = TaskViewModel()
     
     var project: Project?
-    var taskList: Tasklist?
+    var taskList: TaskList?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,9 +54,9 @@ class AddTaskViewController: UIViewController {
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
-        }) { (response, object, error) in
+        }, failure: { (response, object, error) in
             RSLoadingView.hide(from: self.view)
-        }
+        })
 
     }
 
@@ -124,9 +124,9 @@ class AddTaskViewController: UIViewController {
                 self.present(alertController, animated: true, completion: nil)
             }
             
-        }) { (response, object, error) in
+        }, failure: { (response, object, error) in
             RSLoadingView.hide(from: self.view)
-        }
+        })
 
     }
     

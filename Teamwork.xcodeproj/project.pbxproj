@@ -16,11 +16,10 @@
 		A00859CB1F6A8028005D3330 /* Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00859C31F6A8028005D3330 /* Integration.swift */; };
 		A00859CC1F6A8028005D3330 /* MicrosoftConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00859C41F6A8028005D3330 /* MicrosoftConnector.swift */; };
 		A00859CD1F6A8028005D3330 /* OneDriveBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00859C51F6A8028005D3330 /* OneDriveBusiness.swift */; };
-		A00859CE1F6A8028005D3330 /* RootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00859C61F6A8028005D3330 /* RootClass.swift */; };
 		A01476161F6A87440021C340 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01476141F6A87440021C340 /* API.swift */; };
 		A01476171F6A87440021C340 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01476151F6A87440021C340 /* Network.swift */; };
 		A01476191F6A92F40021C340 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01476181F6A92F40021C340 /* AddTaskViewController.swift */; };
-		A014761B1F6AA0DE0021C340 /* Tasklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014761A1F6AA0DE0021C340 /* Tasklist.swift */; };
+		A014761B1F6AA0DE0021C340 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014761A1F6AA0DE0021C340 /* TaskList.swift */; };
 		A014761D1F6AA4840021C340 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014761C1F6AA4840021C340 /* Constant.swift */; };
 		A014761F1F6AA5490021C340 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014761E1F6AA5490021C340 /* TaskViewModel.swift */; };
 		A01476211F6AC46A0021C340 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01476201F6AC46A0021C340 /* Task.swift */; };
@@ -29,7 +28,14 @@
 		A04948C21F6AE8ED005EF4BE /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948C11F6AE8ED005EF4BE /* Global.swift */; };
 		A04948C41F6AEB6A005EF4BE /* BreakOutToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948C31F6AEB6A005EF4BE /* BreakOutToRefreshView.swift */; };
 		A04948C61F6AFE5B005EF4BE /* ShowProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948C51F6AFE5A005EF4BE /* ShowProjectViewController.swift */; };
-		A0AF1BED1F69839A0077A336 /* TeamworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1BEC1F69839A0077A336 /* TeamworkTests.swift */; };
+		A04948C81F6BCC1A005EF4BE /* ProjectViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948C71F6BCC1A005EF4BE /* ProjectViewModelSpec.swift */; };
+		A04948CD1F6BF27E005EF4BE /* projects.json in Resources */ = {isa = PBXBuildFile; fileRef = A04948CC1F6BF27E005EF4BE /* projects.json */; };
+		A04948D11F6BF807005EF4BE /* ModelsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948D01F6BF807005EF4BE /* ModelsSpec.swift */; };
+		A04948D41F6BFFC1005EF4BE /* tasklists.json in Resources */ = {isa = PBXBuildFile; fileRef = A04948D31F6BFFC1005EF4BE /* tasklists.json */; };
+		A04948D61F6C06BA005EF4BE /* todo-items.json in Resources */ = {isa = PBXBuildFile; fileRef = A04948D51F6C06BA005EF4BE /* todo-items.json */; };
+		A04948D81F6C0A9F005EF4BE /* TaskViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948D71F6C0A9F005EF4BE /* TaskViewModelSpec.swift */; };
+		A04948DA1F6C0C81005EF4BE /* ShowProjectViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948D91F6C0C81005EF4BE /* ShowProjectViewControllerSpec.swift */; };
+		A04948DC1F6C0EB7005EF4BE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04948DB1F6C0EB7005EF4BE /* Helper.swift */; };
 		A0AF1C261F698DD40077A336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AF1C171F698DD40077A336 /* Assets.xcassets */; };
 		A0AF1C271F698DD40077A336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C191F698DD40077A336 /* AppDelegate.swift */; };
 		A0AF1C281F698DD40077A336 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF1C1B1F698DD40077A336 /* MenuViewController.swift */; };
@@ -70,11 +76,10 @@
 		A00859C31F6A8028005D3330 /* Integration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Integration.swift; sourceTree = "<group>"; };
 		A00859C41F6A8028005D3330 /* MicrosoftConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrosoftConnector.swift; sourceTree = "<group>"; };
 		A00859C51F6A8028005D3330 /* OneDriveBusiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneDriveBusiness.swift; sourceTree = "<group>"; };
-		A00859C61F6A8028005D3330 /* RootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootClass.swift; sourceTree = "<group>"; };
 		A01476141F6A87440021C340 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		A01476151F6A87440021C340 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		A01476181F6A92F40021C340 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
-		A014761A1F6AA0DE0021C340 /* Tasklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasklist.swift; sourceTree = "<group>"; };
+		A014761A1F6AA0DE0021C340 /* TaskList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		A014761C1F6AA4840021C340 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		A014761E1F6AA5490021C340 /* TaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		A01476201F6AC46A0021C340 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -83,10 +88,17 @@
 		A04948C11F6AE8ED005EF4BE /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		A04948C31F6AEB6A005EF4BE /* BreakOutToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakOutToRefreshView.swift; sourceTree = "<group>"; };
 		A04948C51F6AFE5A005EF4BE /* ShowProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProjectViewController.swift; sourceTree = "<group>"; };
+		A04948C71F6BCC1A005EF4BE /* ProjectViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewModelSpec.swift; sourceTree = "<group>"; };
+		A04948CC1F6BF27E005EF4BE /* projects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = projects.json; sourceTree = "<group>"; };
+		A04948D01F6BF807005EF4BE /* ModelsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelsSpec.swift; sourceTree = "<group>"; };
+		A04948D31F6BFFC1005EF4BE /* tasklists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tasklists.json; sourceTree = "<group>"; };
+		A04948D51F6C06BA005EF4BE /* todo-items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "todo-items.json"; sourceTree = "<group>"; };
+		A04948D71F6C0A9F005EF4BE /* TaskViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewModelSpec.swift; sourceTree = "<group>"; };
+		A04948D91F6C0C81005EF4BE /* ShowProjectViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProjectViewControllerSpec.swift; sourceTree = "<group>"; };
+		A04948DB1F6C0EB7005EF4BE /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		A0AF1BD41F69839A0077A336 /* Teamwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AF1BE31F69839A0077A336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0AF1BE81F69839A0077A336 /* TeamworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0AF1BEC1F69839A0077A336 /* TeamworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamworkTests.swift; sourceTree = "<group>"; };
 		A0AF1BEE1F69839A0077A336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0AF1C171F698DD40077A336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0AF1C191F698DD40077A336 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +149,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A04948CB1F6BF23C005EF4BE /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				A04948CC1F6BF27E005EF4BE /* projects.json */,
+				A04948D51F6C06BA005EF4BE /* todo-items.json */,
+				A04948D31F6BFFC1005EF4BE /* tasklists.json */,
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
 		A0AF1BCB1F69839A0077A336 = {
 			isa = PBXGroup;
 			children = (
@@ -177,8 +199,13 @@
 		A0AF1BEB1F69839A0077A336 /* TeamworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				A0AF1BEC1F69839A0077A336 /* TeamworkTests.swift */,
+				A04948CB1F6BF23C005EF4BE /* Json */,
 				A0AF1BEE1F69839A0077A336 /* Info.plist */,
+				A04948DB1F6C0EB7005EF4BE /* Helper.swift */,
+				A04948D91F6C0C81005EF4BE /* ShowProjectViewControllerSpec.swift */,
+				A04948D01F6BF807005EF4BE /* ModelsSpec.swift */,
+				A04948C71F6BCC1A005EF4BE /* ProjectViewModelSpec.swift */,
+				A04948D71F6C0A9F005EF4BE /* TaskViewModelSpec.swift */,
 			);
 			path = TeamworkTests;
 			sourceTree = "<group>";
@@ -242,7 +269,7 @@
 		A0AF1C231F698DD40077A336 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A014761A1F6AA0DE0021C340 /* Tasklist.swift */,
+				A014761A1F6AA0DE0021C340 /* TaskList.swift */,
 				A0AF1C401F69A99C0077A336 /* Project.swift */,
 				A00859BF1F6A8028005D3330 /* BoardData.swift */,
 				A00859C01F6A8028005D3330 /* Category.swift */,
@@ -251,7 +278,6 @@
 				A00859C31F6A8028005D3330 /* Integration.swift */,
 				A00859C41F6A8028005D3330 /* MicrosoftConnector.swift */,
 				A00859C51F6A8028005D3330 /* OneDriveBusiness.swift */,
-				A00859C61F6A8028005D3330 /* RootClass.swift */,
 				A01476201F6AC46A0021C340 /* Task.swift */,
 				A01476221F6AC83B0021C340 /* Tag.swift */,
 			);
@@ -419,6 +445,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04948D41F6BFFC1005EF4BE /* tasklists.json in Resources */,
+				A04948D61F6C06BA005EF4BE /* todo-items.json in Resources */,
+				A04948CD1F6BF27E005EF4BE /* projects.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,9 +517,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TeamworkTests/Pods-TeamworkTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -537,7 +571,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A00859CE1F6A8028005D3330 /* RootClass.swift in Sources */,
 				A00859C71F6A8028005D3330 /* BoardData.swift in Sources */,
 				A0AF1C371F699D1F0077A336 /* MenuCell.swift in Sources */,
 				A00859BE1F6A7A13005D3330 /* UIView+Border.swift in Sources */,
@@ -546,7 +579,7 @@
 				A0AF1C321F6994AD0077A336 /* ProjectViewController.swift in Sources */,
 				A0AF1C2E1F6990A60077A336 /* SSASideMenu.swift in Sources */,
 				A04948C21F6AE8ED005EF4BE /* Global.swift in Sources */,
-				A014761B1F6AA0DE0021C340 /* Tasklist.swift in Sources */,
+				A014761B1F6AA0DE0021C340 /* TaskList.swift in Sources */,
 				A0AF1C281F698DD40077A336 /* MenuViewController.swift in Sources */,
 				A0AF1C3F1F69A93A0077A336 /* ProjectViewModel.swift in Sources */,
 				A0AF1C3D1F69A8DB0077A336 /* ProjectCell.swift in Sources */,
@@ -576,7 +609,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0AF1BED1F69839A0077A336 /* TeamworkTests.swift in Sources */,
+				A04948D81F6C0A9F005EF4BE /* TaskViewModelSpec.swift in Sources */,
+				A04948DA1F6C0C81005EF4BE /* ShowProjectViewControllerSpec.swift in Sources */,
+				A04948DC1F6C0EB7005EF4BE /* Helper.swift in Sources */,
+				A04948D11F6BF807005EF4BE /* ModelsSpec.swift in Sources */,
+				A04948C81F6BCC1A005EF4BE /* ProjectViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

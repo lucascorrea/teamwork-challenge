@@ -38,6 +38,11 @@
                BlueprintName = "TeamworkTests"
                ReferencedContainer = "container:Teamwork.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "ShowPorjectViewControllerSpec">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

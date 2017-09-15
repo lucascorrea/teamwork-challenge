@@ -44,14 +44,9 @@ extension API {
     }
     
     var headers: [String: String]? {
-        switch self {
-        //case .AddTask:
-          //  return ["Content-Type": "application/json"]
-        default :
-            return ["Accept": "application/json",
-                    "Content-Type": "application/json",
-                    "Authorization": "Basic eWF0QHRyaXBsZXNwaW4uY29tOnlhdHlhdHlhdDI3"]
-        }
+        return ["Accept": "application/json",
+                "Content-Type": "application/json",
+                "Authorization": Global.authenticate]
         
     }
     

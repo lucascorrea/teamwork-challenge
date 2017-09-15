@@ -18,7 +18,7 @@ class Network {
     static func request(target: API, success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
         
         print(target.url)
-      
+ 
         Alamofire.request(target.url, method: target.method, parameters: target.parameters, headers: target.headers).validate(statusCode: 200..<300).responseJSON { response in
             if response.result.isFailure {
                 

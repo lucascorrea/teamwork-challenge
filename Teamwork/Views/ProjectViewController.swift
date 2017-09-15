@@ -33,9 +33,9 @@ class ProjectViewController: UIViewController {
         projectViewModel.list(success: { (success) in
             RSLoadingView.hide(from: self.view)
             self.projectTableView.reloadData()
-        }) { (response, object, error) in
+        }, failure: { (response, object, error) in
             RSLoadingView.hide(from: self.view)
-        }
+        })
     }
     
     override func didReceiveMemoryWarning() {
@@ -201,9 +201,9 @@ extension ProjectViewController: BreakOutToRefreshDelegate {
             refreshView.endRefreshing()
             
             self.projectTableView.reloadData()
-        }) { (response, object, error) in
+        }, failure: { (response, object, error) in
             refreshView.endRefreshing()
-        }
+        })
     }
     
 }

@@ -1,5 +1,5 @@
 //
-//	Tasklist.swift
+//	TaskList.swift
 //  Teamwork
 //
 //	Create by Lucas Correa on 14/9/2017
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Tasklist{
+struct TaskList {
 
 	var dlm: String!
 	var complete: Bool!
